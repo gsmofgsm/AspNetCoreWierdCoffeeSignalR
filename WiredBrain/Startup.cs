@@ -17,7 +17,7 @@ namespace WiredBrain
             services.AddSingleton(new Random());
             services.AddSingleton<OrderChecker>();
             services.AddHttpContextAccessor();
-            services.AddSignalR().AddMessagePackProtocol();
+            services.AddSignalR().AddRedis().AddMessagePackProtocol();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
