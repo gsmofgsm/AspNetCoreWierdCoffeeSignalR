@@ -26,6 +26,9 @@ setupConnection = () => {
         }
     );
 
+    // first create handlers of the various funcitons
+    // then open connection
+    // so you know no messages missing
     connection.start()
         .catch(err => console.error(err.toString())); 
 };
